@@ -8,36 +8,45 @@
     tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="27dp"></LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
     <EditText
         android:id="@+id/edit2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
 
     <EditText
         android:id="@+id/edit"
         android:layout_width="318dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="27dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

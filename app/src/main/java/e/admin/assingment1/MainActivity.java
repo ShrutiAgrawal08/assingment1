@@ -8,9 +8,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-     EditText editText;
+     EditText editText1,editText2;
     Button button;
-    TextView textView;
+    int c=3;
+    String s,s1;
 
 
     int c=0;
@@ -18,13 +19,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText = findViewById(R.id.edit);
+
         button = findViewById(R.id.button);
-        textView = findViewById(R.id.TextView);
-
-
+        editText1 = findViewById(R.id.edit);
+        editText2 = findViewById(R.id.edit2);
 
         button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                s=editText1.getText().toString();
+            }
+        });
+
+
+
+         {
             @Override
             public void onClick(View v) {
 
